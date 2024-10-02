@@ -346,15 +346,13 @@ footer{
   text-decoration: none;
   list-style-type: none;
   align-items: center;
+  padding: 0;
+  margin: 20px;
 }
 
-.footer-li{
-  margin: 10px 0;
+
+
+.cust-policy{
   border: none;
-  text-decoration: none;
 }
 
-.footer > a{
-  border: none;
-  text-decoration: none;
-}

@@ -417,16 +417,10 @@ footer{
   border-bottom: none;
 }
 
-.cust-policy{
-  border: none;
-}
-
 .footer-li:hover{
-  color:rgb(238, 31, 79);
+  color: rgb(238, 31, 79);
   border-bottom: 1px solid rgb(238, 31, 79);
 }
-
-
 
 .cust-policy{
   border: none;

@@ -32,7 +32,7 @@ border-top-right-radius: 15px;
 
 .link-color > h4{
     font-size: 34px;
-    color: red;
+    color: rgb(238, 31, 79);;
     margin: 10px 0;
 }
 
@@ -43,7 +43,7 @@ border-top-right-radius: 15px;
 }
 
 .add-to-cart{
-    background-color:red;
+    background-color:rgb(238, 31, 79);;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -56,3 +56,10 @@ border-top-right-radius: 15px;
     width: 98%;
     border-radius: 15px;
 }
+
+/* .sale-item{
+    text-align: center;
+    background-color: yellow;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+} */

@@ -86,6 +86,23 @@ header{
   text-decoration: none;
 }
 
+.search-login a:hover{
+ border: 1px solid blanchedalmond;
+ border-radius: 15px;
+}
+
+.search-login a:active{
+  border: 1px solid rgb(238, 31, 79);
+  border-radius: 15px;
+ }
+
+ .search-login li:active{
+  color: rgb(238, 31, 79);
+ }
+
+
+
+
 .search-login ul{
   display: flex;
   gap: 20px;
@@ -126,11 +143,21 @@ header{
   
 }
 
+.head-title-container a:hover{
+  background-color: none;
+  border: 1px solid blanchedalmond;
+
+}
 
 .head-title-container .new-arrival-container p{
   color: rgb(164, 160, 154);
   margin: 20px auto;
- 
+}
+
+.head-title-container a:active{
+  background-color: transparent;
+  border: 1px solid rgb(238, 31, 79);
+  color: rgb(238, 31, 79);
 }
 
 
@@ -173,7 +200,7 @@ header{
 
 .sale-container h1:nth-child(3){
   font-size: 5rem;
-  color: rgb(255, 62, 4); 
+  color: rgb(238, 31, 79); 
   
 }
 
@@ -246,6 +273,19 @@ nav ul a li{
   border: none;
 }
 
+.nav-link li:hover{
+  border: 1px solid blanchedalmond;
+}
+
+.nav-link li:active{
+  background-color: blanchedalmond;
+  color: rgb(238, 31, 79);
+  
+}
+
+
+
+
 
 .img-menu-size{
   width: 30px;
@@ -259,28 +299,32 @@ main{
 content main .categories-container{
   display: grid;
   justify-self: center;
-  grid-template-rows: 50px 1fr 1fr max-content;
+  grid-template-rows: 100px 1fr 1fr fit-content;
 
 }
 
-.categories-container .gender{
-  margin-top: 50px;
+.gender{
+  text-align: center;
+  font-size: 24px;
   align-content: center;
-  font-size: 1.5rem;
-  
-    
+  margin-top: 20px;
+
 }
 
-.gender ul {
-  display: flex;
-  column-gap: 30px;
-  justify-content: center;
-}
-
-.gender ul a li{
-  list-style-type: none;
+.gender a{
+  border: none;
+  margin: auto 20px;
   
 }
+
+.gender a:hover{
+  border-bottom: 2px solid rgb(238, 31, 79);
+  padding: 10px;
+  color: rgb(238, 31, 79);
+  border-radius: 0;
+}
+
+
 
 .categories-item {
   display: grid;
@@ -313,9 +357,31 @@ content h1{
 }
 
 content a{
+  /* border: 1px solid rgb(207, 207, 207); */
+  border-radius: 15px;
+}
+
+.item-background{
   border: 1px solid rgb(207, 207, 207);
   border-radius: 15px;
 }
+
+.item-background:hover{
+  border: 1px solid rgb(238, 31, 79);
+}
+
+
+.categories-label{
+  background-color:rgb(238, 31, 79);
+  color: blanchedalmond;
+  padding: 20px;
+}
+
+.categories-label:active{
+  background-color: transparent;
+  color:rgb(238, 31, 79);
+}
+
 
 .link-color{
   color:rgb(82, 1, 20);
@@ -334,7 +400,8 @@ footer{
 
 
 .footer-margin-content{
-  margin: 50px 0;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .footer-h2{
@@ -346,8 +413,17 @@ footer{
   text-decoration: none;
   list-style-type: none;
   align-items: center;
-  padding: 0;
   margin: 20px;
+  border-bottom: none;
+}
+
+.cust-policy{
+  border: none;
+}
+
+.footer-li:hover{
+  color:rgb(238, 31, 79);
+  border-bottom: 1px solid rgb(238, 31, 79);
 }
 
 

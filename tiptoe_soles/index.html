@@ -6,6 +6,7 @@
     <title>TipToe Soles</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <script src="myjavascript.js" defer></script> 
 </head>
 <body>
     <!-- main container -->
@@ -14,7 +15,7 @@
         <!-- header section -->
         <header>
             <div class="logo-site-map">
-                <div>
+                <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="Tiptoe Soloes Logo"></a>
                     <ul class="breadcrumb">
                         <li><a href="#">Home</a></li>
@@ -30,7 +31,15 @@
                         <a href=""><li>Login</li></a>
                     </ul>
                 </div>
+
+                <div class="hamburger">
+
+                    <img src="images/menu_24dp_EE1F4F_FILL0_wght400_GRAD0_opsz24.png" alt="menu">
+                </div>
             </div>
+
+            
+            
 
 
             <!-- Banner -->
@@ -58,7 +67,7 @@
 
         <content>
             <nav>
-                <ul>
+                <ul class="nav-desktop">
                     <a href="products.html" class="nav-link ">
                         <li> 
                              Products
@@ -77,14 +86,54 @@
                         <li>About Us</li>
                     </a>
                 </ul>
+
+                
             </nav>
+
+            <nav class="nav-mobile-container">
+                <ul class="nav-mobile">
+                    <a href="products.html" class="nav-link-mobile nav-link ">
+                        <li> 
+                             Products
+                        </li>
+                    </a>
+                    <a href="" class="nav-link-mobile nav-link">
+                        <li>
+                            Services
+                        </li>
+                    </a>
+                    <a href="" class="nav-link-mobile nav-link">
+                        <li>Wish List</li>
+                    </a>
+                
+                    <a href="about.html" class="nav-link-mobile nav-link">
+                        <li>About Us</li>
+                    </a>
+
+                    <a href="#" class="nav-link-mobile nav-link">
+                        <li>New Arrival</li>
+                    </a>
+
+                    <a href="#" class="nav-link-mobile nav-link">
+                        <li>Search</li>
+                    </a>
+
+                    <a href="#" class="nav-link-mobile nav-link">
+                        <li>Login</li>
+                    </a>
+
+
+                </ul>
+            </nav>
+
+
 
             <main>
                 <div class="categories-container">
                     <div class="gender">
-                        <a href="">Men</a>
+                        <a class="link-color" href="">Men</a>
                         |
-                        <a href="">Women</a>
+                        <a class="link-color" href="">Women</a>
                     </div>
 
                     
@@ -152,5 +201,3 @@
 
     </div>
     
-</body>
-</html>

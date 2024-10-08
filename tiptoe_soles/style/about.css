@@ -43,11 +43,26 @@
     margin-bottom: 20px;
     text-decoration: none;
     color: black; 
+   
+    
+}
+
+.contact li a{
+    text-decoration: none;
+    color:rgb(82, 1, 20);
+    
 }
 
 
-.contact p:nth-child(3){
-    margin: 0;
+.contact li a:hover{
+    color:rgb(238, 31, 79);
 }
+
+.contact li{
+    margin: 10px auto;
+    list-style-type: none;
+}
+
+
 
 

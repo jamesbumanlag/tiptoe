@@ -1,0 +1,74 @@
+/* .desktop{
+    border: 2px solid green;
+    padding: 50px 100px;
+    border-radius: 20px;
+    background-color: green;
+    color: blanchedalmond;
+}
+
+.mobile{
+    border: 2px solid blue;
+    padding: 50px 100px;
+    border-radius: 20px;
+    background-color: blue;
+    color: blanchedalmond;
+    display: none;
+}
+
+
+
+/* @media (max-width: 1200px){
+   
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+} */
+
+
+/* @media (max-width: 1200px){
+   
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px){
+   
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+} */ 
+
+
+.hamburger-button { 
+    border: none; 
+    background: none; 
+    width: 3rem; 
+    display: block; 
+    margin: 1rem auto; 
+  } 
+  
+  .hamburger-button img { 
+  
+      width: 100%; 
+  
+  } 
+
+  .hidden{
+    display: none;
+  }
+  
+  

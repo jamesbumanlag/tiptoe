@@ -58,16 +58,6 @@ html{
   
 } 
 
-.hamburger-button img { 
-
-    width: 80%; 
-    background-color: transparent;
-    color: white;
-
-} 
-
-
-
 header{
   display: block;
   background:linear-gradient(
@@ -118,6 +108,10 @@ header{
  border-radius: 15px;
 }
 
+.search-login .on-mobile:hover{
+  border: none;
+}
+
 .search-login a:active{
   border: 1px solid rgb(238, 31, 79);
   border-radius: 15px;
@@ -127,13 +121,11 @@ header{
   color: rgb(238, 31, 79);
  }
 
-
-
-
 .search-login ul{
   display: flex;
   gap: 20px;
   justify-content: end;
+  list-style: none;
   
 }
 
@@ -141,10 +133,18 @@ header{
   list-style-type: none;
   padding: 10px 15px;
   color:blanchedalmond;
-  
-  
-
 }
+
+.search-login svg{
+  fill: blanchedalmond;
+  display: none;
+  
+}
+
+ .on-mobiile:active{
+    border: none;
+}
+
 .head-title-container{
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -318,7 +318,7 @@ nav ul a li{
   z-index: 999;
   background-color: white;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -382,8 +382,6 @@ content main .categories-container{
   font-size: 24px;
   align-content: center;
   margin-top: 20px;
-  
-
 }
 
 .gender a{
@@ -496,18 +494,26 @@ footer{
   border: none;
 }
 
-/* Media querry */
+@media (max-width: 800px){
 
-@media (max-width: 850px){
+  .on-mobile-hide{
+    display: none;
+  }
 
-  /* .content-wrapper{
-    width: 400px;
-  } */
+
+  .search-login{
+    display: none;
+  }
+
+  .search-login .on-mobile{
+    display: flex;
+  }
+  .search-login svg{
+    display: flex;
+  }
 
    .head-title-container{
     display: block;
-    
-    
   }
 
   .new-arrival-container{
@@ -539,9 +545,6 @@ footer{
     display: grid;
   }
 
-  .logo-site-map .search-login{
-    display: none;
-  }
 
   .logo-site-map .breadcrumb{
     display: none;
@@ -568,7 +571,18 @@ footer{
   footer{
     display: block;
   }
+}
 
+@media (max-width:400px){
+  .nav-mobile-container{
+    width: 100%;
+  }
+}
+
+
+
+
+/* 
   .nav-mobile{
     position: fixed;
     top: 0;
@@ -584,14 +598,14 @@ footer{
     justify-content: flex-start;
 
 
-  }
+  } */
 
-  .nav-mobile a{
+  /* .nav-mobile a{
     width: 100px;;
   }
 
   .nav-mobile li{
     width: 100%;
-  }
+  } */
 
 }

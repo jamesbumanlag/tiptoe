@@ -281,6 +281,9 @@ nav ul{
   padding: 50px;
 }
 
+.nav-mobile-container ul:first-child{
+  margin-right: auto;
+}
 
 nav ul a{
   display: block;
@@ -305,8 +308,46 @@ nav ul a li{
   border: none;
 }
 
+
 .nav-mobile-container{
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: white;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: -10 0 10px rgba(0,0,0,0.1);
+}
+
+.nav-mobile-container{
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-mobile-container li{
+  height: 50px;
+  width: 100%;
+
+}
+
+.nav-mobile-container a{
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  color: black;
+  width: 100%;
+}
+
+.nav-mobile-container a:hover{
+  background-color: #f0f0f0;
+  
 }
 
 .nav-link li:hover{

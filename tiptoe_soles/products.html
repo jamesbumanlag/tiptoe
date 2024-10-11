@@ -28,8 +28,10 @@
                 
                 <div class="search-login">
                     <ul>
-                        <a href=""><li>Search</li></a>
-                        <a href=""><li>Login</li></a>
+                        <a class="on-mobile-hide" href=""><li>Search</li></a>
+                        <a class="on-mobile-hide" href=""><li>Login</li></a>
+                        <a class="on-mobile" onclick=showSidebar() href="#"><li><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                        </li>
                     </ul>
                 </div>
 
@@ -84,6 +86,20 @@
                 </ul>
             </nav>
 
+            <div>
+                <ul  class="nav-mobile-container">
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Wish List</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">New Arrival</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+
             <main>
                 <div class="categories-container">
                     <div class="gender">
@@ -96,20 +112,20 @@
                     <ul class="categories">
                         <h1 class="link-color">Categories</h1>
                         <div class="categories-item ">
-                            <a  class="link-color item-background " href="">
-                                <img class="categories-img head-image-size" src="images/comfort.jpg" alt="">
+                            <a  class="link-color item-background" href="Comfort shoes">
+                                <img class="categories-img head-image-size" src="images/Sally Tan.jpg" alt="comfort shoe">
                                 <li class="categories-label" >Comfort</li>
                             </a>
-                            <a class="link-color item-background "  href="">
-                                <img class="categories-img head-image-size" src="images/daily.png" alt="">
+                            <a class="link-color item-background"  href="">
+                                <img class="categories-img head-image-size" src="images/Gary Black.jpg" alt="Daily shoes">
                                 <li class="categories-label" >Daily</li>
                             </a>
-                            <a class="link-color item-background "  href="">
-                                <img class="categories-img head-image-size" src="images/Running.jpg" alt="">
-                                <li class="categories-label" >Running</li>
+                            <a class="link-color item-background"  href="">
+                                <img class="categories-img head-image-size" src="images/Clancy Blue.jpg" alt="walking shoe">
+                                <li class="categories-label" >Walk</li>
                             </a>
-                            <a class="link-color item-background "  href="">
-                                <img class="categories-img head-image-size" src="images/work.png" alt="">
+                            <a class="link-color item-background"  href="">
+                                <img class="categories-img head-image-size" src="images/Work and Walk Chesnut.jpg" alt="work shoe">
                                 <li class="categories-label" >Work</li>
                             </a>
                         </div>
@@ -121,35 +137,69 @@
                         <div class="products-item ">
                             
                             <a  class="link-color item-background" href="">
-                                <img class="categories-img product-head-image-size" src="images/Clancy Blue.jpg" alt="">
+                                <img class="categories-img product-head-image-size" src="images/Clancy Blue.jpg" alt="clany blue photo">
                                 <li class="products-label products-alignment" >Clancy Blue</li>
-                                <h4 class="product-price">$50</h4>
-                                <img class="star-img" src="images/5star.jpg" alt="">
+                                <h4 class="product-price">$59</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong>US 6 7 8 9 10 11</p>
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
                                 <button class="add-to-cart">Add to cart</button>
                             </a>
                             
                             <a class="link-color item-background "  href="">
                                 <!-- <p class="sale-item">50% Off</p> -->
-                                <img class="categories-img product-head-image-size" src="images/Gary Black.jpg" alt="">
+                                <img class="categories-img product-head-image-size" src="images/Gary Black.jpg" alt="gary black photo">
                                 <li class="products-label products-alignment" >Gary Black</li>
-                                <h4>$50</h4>
-                                <img class="star-img" src="images/5star.jpg" alt="">
+                                <h4>$79</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
                                 <button class="add-to-cart">Add to cart</button>
                             </a>
                             <a class="link-color item-background "  href="">
-                                <img class="categories-img product-head-image-size" src="images/Heavenly Black.jpg" alt="">
+                                <img class="categories-img product-head-image-size" src="images/Heavenly Black.jpg" alt="heavenly black photo">
                                 <li class="products-label products-alignment" >Heavenly Black</li>
-                                <h4>$50</h4>
-                                <img class="star-img" src="images/5star.jpg" alt="">
+                                <h4>$90</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
                                 <button  class="add-to-cart">Add to cart</button>
                             </a>
                             <a class="link-color item-background "  href="">
-                                <img class="categories-img product-head-image-size" src="images/Gary Tan.jpg" alt="">
+                                <img class="categories-img product-head-image-size" src="images/Gary Tan.jpg" alt="gary tan photo">
                                 <li class="products-label products-alignment" >Gary Tan</li>
-                                <h4>$50</h4>
-                                <img class="star-img" src="images/5star.jpg" alt="">
+                                <h4>$79.00</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
                                 <button class="add-to-cart">Add to cart</button>
                             </a>
+                            <a class="link-color item-background "  href="">
+                                <img class="categories-img product-head-image-size" src="images/Sally Black.jpg" alt="sally black photo">
+                                <li class="products-label products-alignment" >Sally Black</li>
+                                <h4>$75.00</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
+                                <button class="add-to-cart">Add to cart</button>
+                            </a>
+                            <a class="link-color item-background "  href="">
+                                <img class="categories-img product-head-image-size" src="images/Work and Walk Chesnut.jpg" alt="work and walk chestnut photo">
+                                <li class="products-label products-alignment" >Work and Walk</li>
+                                <h4>$85.00</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
+                                <button class="add-to-cart">Add to cart</button>
+                            </a>
+
+                            <a class="link-color item-background "  href="">
+                                <img class="categories-img product-head-image-size" src="images/Sally Tan.jpg" alt="sally tan photo">
+                                <li class="products-label products-alignment" >Sally Tan</li>
+                                <h4>$75.00</h4>
+                                <p class="products-size products-alignment"><strong>Size: </strong> US 6 7 8 9 10 11</p>
+                                
+                                <img class="star-img" src="images/5star.jpg" alt="five star rating">
+                                <button class="add-to-cart">Add to cart</button>
+                            </a>
+
                         </div>
                         
                     </ul>
@@ -159,13 +209,13 @@
                         <div class="customer-care footer-margin-content">
                             <h2 class="footer-h2 link-color" >Customer Care</h2>
                             <ul>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >Return Policies</li>
                                 </a>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >Exchange Policies</li>
                                 </a>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >Delivery Policies</li>
                                 </a>
                             </ul>
@@ -174,13 +224,13 @@
                         <div class="socials footer-margin-content">
                             <h2 class="footer-h2 link-color">Our Socials</h2>
                             <ul>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >Facebook</li>
                                 </a>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >YouTube</li>
                                 </a>
-                                <a class="cust-policy" href="">
+                                <a class="cust-policy" href="#">
                                     <li class="footer-li link-color" >Instagram</li>
                                 </a>
                             </ul>
@@ -195,6 +245,16 @@
         
 
     </div>
-    
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.nav-mobile-container')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.nav-mobile-container')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>

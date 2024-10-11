@@ -1,18 +1,13 @@
-/* content main .products{
-    display: grid;
-    justify-self: center;
-    grid-template-rows: 50px 1fr 1fr max-content;
-  
-  } */
-
 .products-item {
 display: grid;
-grid-template-columns: repeat(auto-fit, 300px);
-gap:60px;
+grid-template-columns: repeat(auto-fit, 250px);
+gap:30px;
 justify-content: center;
 mix-blend-mode: multiply;
+}
 
-
+.products-item a{
+    height: fit-content;
 }
 
 .products-label{
@@ -23,9 +18,22 @@ font-size: 24px;
 margin-bottom: 10px;
 }
 
+.products-size{
+    font-size: 0.1 rem;
+}
+
+.color-box{
+    width: 2px;
+    height: 2px;
+}
+
+.color-tan{
+    background-color: tan;
+}
+
 .product-head-image-size{
 width: 100%;
-height: 280px;
+height: 200px;
 border-top-left-radius: 15px;
 border-top-right-radius: 15px;
 }

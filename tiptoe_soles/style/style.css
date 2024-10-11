@@ -6,7 +6,7 @@ html{
 
 
 *{
-    text-decoration: 0;
+    text-decoration: none;
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -405,7 +405,7 @@ content main .categories-container{
 .categories-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, 300px);
-  gap:60px;
+  gap:40px;
   justify-content: center;
   mix-blend-mode: multiply;
 }
@@ -419,6 +419,10 @@ content h1{
 .categories-img-head{
   mix-blend-mode: multiply;
 }
+
+/* .categories-img{
+  width:max-content;
+} */
 
 .categories-label{
   list-style-type: none;

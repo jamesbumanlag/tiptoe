@@ -68,7 +68,8 @@ header{
   background-position:  50%;;
   background-blend-mode: darken;
   background-size: cover;
-  height: 36rem;
+  height: fit-content;
+  padding-bottom: 20px;
 }
 
 .content-wrapper{
@@ -195,14 +196,17 @@ header{
   font-family: "Bebas Neue";
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-inline: 3rem;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 450px;
+  width: 400px;
+  height: max-content;
   
 }
 
@@ -421,7 +425,8 @@ content h1{
   text-align: center;
   margin-top: 75px;
   font-size: 24px;
-  margin-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 content a{
@@ -493,6 +498,141 @@ footer{
 .cust-policy{
   border: none;
 }
+
+
+@media (max-width:1200px){
+  .head-title-container{
+    display: block;
+    margin-inline: auto;
+  }
+  .new-arrival-container{
+    display: none;
+    
+  }
+
+  
+  .sale-container{
+    display: block;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0;
+    margin: 50px auto;
+    background: none;
+    border: none;
+
+    
+  }
+
+
+
+
+  
+}
+
+
+@media (max-width:950px){
+  .head-title-container{
+    display: block;
+    margin-inline: auto;
+  }
+  .new-arrival-container{
+    display: none;
+    
+  }
+
+  
+  .sale-container{
+    display: block;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0;
+    margin: 50px auto;
+    background: none;
+    border: none;
+
+    
+  }
+
+}
+
+
+@media (max-width: 950px){
+
+  .on-mobile-hide{
+    display: none;
+  }
+
+
+  .search-login{
+    display: none;
+  }
+
+  .search-login .on-mobile{
+    display: flex;
+  }
+  .search-login svg{
+    display: flex;
+  }
+
+   .head-title-container{
+    display: block;
+  }
+
+  .new-arrival-container{
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 50px;
+    
+  }
+
+  .new-arrival-container a{
+    width: fit-content;
+    align-content: center;
+  }
+
+  .sale-container{
+    display: block;
+    font-size: 1rem;
+    width: fit-content;
+    padding: 0;
+    margin: 50px auto;
+    background: none;
+    border: none;
+
+    
+  }
+
+  header{
+    display: grid;
+  }
+
+
+  .logo-site-map .breadcrumb{
+    display: none;
+  }
+
+  .logo-site-map .hamburger{
+    display:grid;
+    width: 100%;
+    height: 3rem;
+    margin-top: 5px;
+    margin-right: 5px;
+    justify-items: end;
+    }
+  
+  .logo-site-map .hamburger img{
+    width: 3rem;
+  }
+
+  
+  nav{
+    display: none;
+  }
+
+ 
+}
+
 
 @media (max-width: 800px){
 
@@ -573,6 +713,8 @@ footer{
   }
 }
 
+
+
 @media (max-width:400px){
   .nav-mobile-container{
     width: 100%;
@@ -608,4 +750,3 @@ footer{
     width: 100%;
   } */
 
-}
